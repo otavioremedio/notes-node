@@ -1,4 +1,7 @@
 //console.log('Starting notes.js');
+//atalhos
+//ctrl p buscar arquivo
+//ctrl alt shift janela direita buscar string 
 const fs = require('fs');
 
 var fetchNotes = () => {
