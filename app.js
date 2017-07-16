@@ -5,7 +5,16 @@ const _ = require('lodash');
 const yargs = require('yargs');
 const notes = require('./notes.js');
 
-const argv = yargs.argv;
+const argv = yargs
+  .command('add', 'Add a new note',{
+    title: {
+      describe: 'Title of note',
+      demand: true
+
+    }
+  })
+  .help()
+  .argv;
 var command = argv._[0];// process.argv[2];
 console.log('Command: ', command);
 //console.log('Process', process.argv);
