@@ -32,6 +32,8 @@ const argv = yargs
   .help()
   .argv;
 
+//console.log(`comando: ${argv.c}`);
+
 var command = argv._[0];// process.argv[2];
 //console.log('Command: ', command);
 //console.log('Process', process.argv);
